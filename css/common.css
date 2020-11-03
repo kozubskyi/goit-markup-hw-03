@@ -1,0 +1,94 @@
+:root {
+  --primary-text-color: #212121;
+  --secondary-text-color: #757575;
+  --hover-color: #2196f3;
+  --filter-bg-color: #f5f4fa;
+}
+
+body {
+  font-family: 'roboto', sans-serif;
+  font-size: 14px;
+  color: var(--primary-text-color);
+  background-color: white;
+  letter-spacing: 0.03em;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.section-title {
+  font-size: 36px;
+  text-align: center;
+}
+
+/* Header */
+
+.logo {
+  font-family: raleway, sans-serif;
+  font-size: 26px;
+  color: black;
+  font-weight: bold;
+  line-height: 1.19;
+}
+
+.logo-web {
+  color: var(--hover-color);
+}
+
+.site-nav {
+  color: var(--primary-text-color);
+  text-decoration: none;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.header-e-mail,
+.header-tel {
+  color: var(--secondary-text-color);
+  font-weight: 500;
+  line-height: 1.14;
+}
+
+.site-nav:hover,
+.site-nav:focus,
+.e-mail:hover,
+.e-mail:focus,
+.tel:hover,
+.tel:focus {
+  color: var(--hover-color);
+}
+
+.current {
+  color: var(--hover-color);
+}
+
+/* Footer */
+
+footer {
+  background-color: #2f303a;
+}
+
+address {
+  font-style: normal;
+}
+
+.address {
+  color: white;
+  line-height: 1.71;
+}
+
+.logo-studio {
+  color: white;
+}
+
+.footer-e-mail,
+.footer-tel {
+  color: rgb(255, 255, 255, 0.6);
+  line-height: 1.71;
+}

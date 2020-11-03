@@ -1,0 +1,55 @@
+/* Hero */
+
+.hero {
+  background-color: #2f303a;
+  text-align: center;
+}
+
+.hero-title {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+}
+
+.hero-btn {
+  color: white;
+  background-color: var(--hover-color);
+  border: none;
+  font-weight: bold;
+  line-height: 1.87;
+}
+
+/* 4 принципа */
+
+.principles {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+}
+
+.principles-text {
+  color: var(--secondary-text-color);
+}
+
+/* Наша команда */
+
+.our-team {
+  background-color: #f5f4fa;
+}
+
+.team-card {
+  background-color: white;
+  line-height: 1.19;
+}
+
+.card-title {
+  font-size: 16px;
+}
+
+.team-position {
+  color: var(--secondary-text-color);
+  font-size: 16px;
+}

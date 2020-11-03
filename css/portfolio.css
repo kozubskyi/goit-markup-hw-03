@@ -1,0 +1,13 @@
+.filter {
+  background-color: var(--filter-bg-color);
+  border: none;
+}
+
+.filter:hover,
+.filter:focus {
+  color: white;
+  background-color: var(--hover-color);
+}
+
+/* На макете вроде как ошибка. Указан bg-color страницы #E5E5E5 (сероватый),
+но когда его вносить, то он сильно серый, явно темнее чем на макете. */
