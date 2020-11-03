@@ -1,8 +1,7 @@
-/* Hero */
+/* HERO */
 
 .hero-section {
-  background-color: #2f303a;
-  text-align: center;
+  background-color: var(--section-dark-bg-color);
 }
 
 .hero-title {
@@ -12,15 +11,17 @@
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: white;
+  color: var(--white-color);
 }
 
 .hero-btn {
-  color: white;
+  color: var(--white-color);
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
   background-color: var(--hover-color);
   border: none;
-  font-weight: bold;
-  line-height: 1.87;
 }
 
 /* 4 принципа */
