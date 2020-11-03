@@ -24,7 +24,7 @@
   border: none;
 }
 
-/* 4 принципа */
+/* 4 ГЛАВНЫХ ПРИНЦИПА */
 
 .principle {
   text-transform: uppercase;
@@ -37,7 +37,7 @@
   color: var(--secondary-text-color);
 }
 
-/* Наша команда */
+/* НАША КОМАНДА */
 
 .our-team {
   background-color: #f5f4fa;
