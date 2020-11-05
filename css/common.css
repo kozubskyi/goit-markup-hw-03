@@ -10,15 +10,32 @@
   --transparent-gray-color: rgba(255, 255, 255, 0.6);
 }
 
+/* * {
+  outline: 1px solid black;
+} */
+
 body {
   font-family: "roboto", sans-serif;
   font-size: 14px;
-  line-height: 1.71;
+  line-height: 1.14;
   color: var(--primary-text-color);
   letter-spacing: 0.03em;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 .list {
+  padding: 0;
+  margin: 0;
   list-style: none;
 }
 
@@ -30,6 +47,8 @@ body {
 .section-title {
   font-size: 36px;
   text-align: center;
+  margin-bottom: 50px;
+  line-height: 1.17;
 }
 
 .logo {
@@ -38,6 +57,20 @@ body {
   font-size: 26px;
   line-height: 1.19;
   color: var(--hover-color);
+  vertical-align: middle;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.container {
+  padding: 0px 15px;
+  width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+img {
+  display: block;
 }
 
 .visually-hidden {
@@ -61,12 +94,40 @@ body {
   color: var(--primary-text-color);
 }
 
+.header .container {
+  height: 80px;
+}
+
+.header .container,
+.nav,
+.site-menu,
+.contacts {
+  display: flex;
+  align-items: center;
+}
+
+.contacts {
+  margin-left: auto;
+}
+
+.nav .logo {
+  margin-right: 93px;
+}
+
+.site-menu .item:not(:last-child),
+.contacts .item:not(:last-child) {
+  margin-right: 50px;
+}
+
 .site-nav {
+  display: block;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .header-e-mail,
@@ -75,6 +136,8 @@ body {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .site-nav:hover,
@@ -86,7 +149,7 @@ body {
   color: var(--hover-color);
 }
 
-.current {
+.site-menu .current {
   color: var(--hover-color);
 }
 
@@ -94,6 +157,15 @@ body {
 
 .footer {
   background-color: var(--section-dark-bg-color);
+}
+
+.footer .container {
+  height: 252px;
+  padding-top: 40px;
+}
+
+.footer-logo {
+  display: inline-block;
 }
 
 .footer-logo-studio {
@@ -105,6 +177,12 @@ address {
   font-style: normal;
 }
 
-.address {
+.physical-address {
   color: white;
+  margin-bottom: 9px;
+}
+
+.footer-e-mail {
+  display: inline-block;
+  margin-bottom: 9px;
 }
