@@ -165,6 +165,10 @@ img {
   padding-top: 40px;
 }
 
+.container-logo-address {
+  width: 270px;
+}
+
 .footer-logo {
   display: inline-block;
 }
