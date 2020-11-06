@@ -10,9 +10,9 @@
   --transparent-gray-color: rgba(255, 255, 255, 0.6);
 }
 
-/* * {
+* {
   outline: 1px solid black;
-} */
+}
 
 body {
   font-family: "roboto", sans-serif;
@@ -71,6 +71,10 @@ p {
 
 img {
   display: block;
+  min-width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
 }
 
 .visually-hidden {
@@ -95,10 +99,6 @@ img {
   color: var(--primary-text-color);
 }
 
-.header .container {
-  height: 80px;
-}
-
 .header .container,
 .nav,
 .site-menu,
@@ -109,6 +109,13 @@ img {
 
 .contacts {
   margin-left: auto;
+}
+
+.contacts .item::before {
+  display: block;
+  content: "";
+  height: 20px;
+  background-color: tomato;
 }
 
 .nav .logo {
@@ -146,7 +153,9 @@ img {
 .e-mail:hover,
 .e-mail:focus,
 .tel:hover,
-.tel:focus {
+.tel:focus,
+.physical-address:hover,
+.physical-address:focus {
   color: var(--hover-color);
 }
 
@@ -178,16 +187,18 @@ img {
 }
 
 address {
-  color: var(--transparent-gray-color);
+  color: var(--white-color);
   font-style: normal;
 }
 
-.physical-address {
-  color: white;
+.physical-address,
+.footer-e-mail,
+.footer.tel {
+  display: inline-block;
   margin-bottom: 9px;
 }
 
-.footer-e-mail {
-  display: inline-block;
-  margin-bottom: 9px;
+.footer-e-mail,
+.footer-tel {
+  color: var(--transparent-gray-color);
 }
